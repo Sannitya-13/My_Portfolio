@@ -1,0 +1,958 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Sannitya M</title>
+<style>
+      body {font-family: Arial, Helvetica, sans-serif;}
+      
+      /* The Modal (background) */
+      .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+	      height: 700px;
+	      overflow: auto;
+	      background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */i;
+        -webkit-animation-name: fadeIn; /* Fade in the background */
+        -webkit-animation-duration: 0.4s;
+        animation-name: fadeIn;
+        animation-duration: 0.4s
+      }
+      
+      /* Modal Content */
+      .modal-content {
+        position: fixed;
+        bottom: 0;
+        background-color: #fefefe;
+        width: 100%;
+	overflow: auto;
+        -webkit-animation-name: slideIn;
+        -webkit-animation-duration: 0.4s;
+        animation-name: slideIn;
+        animation-duration: 0.4s
+      }
+      
+      /* The Close Button */
+      .close {
+        color: white;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+      }
+      
+      .close:hover,
+      .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+      }
+      .clse {
+        color: white;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+      }
+      
+      .clse:hover,
+      .clse:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+      }
+      
+      .modal-header {
+        padding: 2px 16px;
+        background-color: #08bbf1;
+        color: white;
+      }
+      
+      .modal-body {padding: 2px 16px;overflow: auto;}
+      
+      .modal-footer {
+        height: 5px;
+        padding: 2px 16px;
+        background-color: #5cb85c;
+        color: white;
+      }
+      
+      /* Add Animation */
+      @-webkit-keyframes slideIn {
+        from {bottom: -300px; opacity: 0} 
+        to {bottom: 0; opacity: 1}
+      }
+      
+      @keyframes slideIn {
+        from {bottom: -300px; opacity: 0}
+        to {bottom: 0; opacity: 1}
+      }
+      
+      @-webkit-keyframes fadeIn {
+        from {opacity: 0} 
+        to {opacity: 1}
+      }
+      
+      @keyframes fadeIn {
+        from {opacity: 0} 
+        to {opacity: 1}
+      }
+      
+      </style>
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" >
+    <!-- Fonts -->
+    <link rel="stylesheet" type="text/css" href="assets/fonts/font-awesome.min.css">
+    <!-- Icon -->
+    <link rel="stylesheet" type="text/css" href="assets/fonts/simple-line-icons.css">
+    <!-- Slicknav -->
+    <link rel="stylesheet" type="text/css" href="assets/css/slicknav.css">
+    <!-- Menu CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/menu_sideslide.css">
+    <!-- Slider CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/slide-style.css">
+    <!-- Nivo Lightbox -->
+    <link rel="stylesheet" type="text/css" href="assets/css/nivo-lightbox.css" >
+    <!-- Animate -->
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+    <!-- Main Style -->
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <!-- Responsive Style -->
+    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!--link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"-->
+      <!--link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"-->
+
+    <!-- Compiled and minified JavaScript -->
+    <!--script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script-->
+
+  </head>
+
+  <body>
+
+    <!-- Header Area wrapper Starts -->
+    <header id="header-wrap">
+      <!-- Navbar Start -->
+      <nav class="navbar navbar-expand-lg fixed-top scrolling-navbar indigo">
+        <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+              <span class="icon-menu"></span>
+              <span class="icon-menu"></span>
+              <span class="icon-menu"></span>
+            </button>
+            <!--a href="index.html" class="navbar-brand"><img src="assets/img/logo.png" alt=""></a-->
+          </div>
+          <div class="collapse navbar-collapse" id="main-navbar">
+            <ul class="onepage-nev navbar-nav mr-auto w-100 justify-content-end clearfix">
+              <li class="nav-item active">
+                <a class="nav-link" href="#hero-area">
+                  Home
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">
+                  About
+                </a>
+              </li>
+	      <li class="nav-item">
+                <a class="nav-link" href="#experience">
+                  Experience              
+		</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#community">
+                  Communities
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#services">
+                  Areas
+                </a>
+              </li>
+              
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#portfolios">
+                  Work
+                </a>
+              </li>
+	      
+              
+            </ul>
+          </div>
+        </div>
+
+        <!-- Mobile Menu Start -->
+        <ul class="onepage-nev mobile-menu">
+          <li>
+            <a href="#home">Home</a>
+          </li>
+          <li>
+            <a href="#about">about</a>
+          </li>
+          <li>
+            <a href="#experience">Experience</a>
+          </li> 
+	  <li>
+            <a href="#services">Areas</a>
+          </li>
+         
+          <li>
+            <a href="#portfolio">Works</a>
+          </li>
+         
+        </ul>
+        <!-- Mobile Menu End -->
+      </nav>
+      <!-- Navbar End -->
+
+      <!-- Hero Area Start -->
+      <div id="hero-area" class="hero-area-bg">
+        <div class="overlay"></div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 col-sm-12 text-center">
+              <div class="contents">
+                <h5 class="script-font wow fadeInUp" data-wow-delay="0.2s">Hello, I am</h5>
+                <h2 class="head-title wow fadeInUp" data-wow-delay="0.4s">Sannitya</h2>
+		<p class="script-font wow fadeInUp" data-wow-delay="0.6s" >A developer, programmer & an artist! My Keirsey Temperament is "Guardian" and I am a very a conscientious person </p>
+                <ul class="social-icon wow fadeInUp" data-wow-delay="0.8s">
+                  <!--li>
+                    <a class="facebook" href="#"><i class="icon-social-facebook"></i></a>
+                  </li-->
+                  <!--li>
+                    <a class="twitter" href="#"><i class="icon-social-twitter"></i></a>
+                  </li-->
+                  <li>
+                    <a class="google" href="https://medium.com/@mssannitya"><i class="fa fa-medium"></i></a>
+                  </li>
+                  <li>
+                    <a class="linkedin" href=
+		    "https://www.linkedin.com/in/m-s-052080214/"><i class="icon-social-linkedin"></i></a>
+                  </li>
+                  <li>
+                    <a class="github" href="https://github.com/Sannitya-13"><i class="icon-social-github"></i></a>
+                  </li>
+                </ul>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Hero Area End -->
+
+    </header>
+    <!-- Header Area wrapper End -->
+
+    <!-- About Section Start -->
+    <section id="about" class="section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <div class="img-thumb wow fadeInLeft" data-wow-delay="0.3s">
+              <img class="img-fluid" src="assets/me.jpg" alt="">
+            </div>
+          </div> 
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <div class="profile-wrapper wow fadeInRight" data-wow-delay="0.3s">
+              <h4>About me</h4>
+	    <!--a class="waves-effect waves-light btn-large"><i class="material-icons left">cloud</i>button</a--> 
+              <div class="about-profile">
+                <ul class="admin-profile">
+                  <li><span class="pro-title" style="font-size: 20px;"> Name </span> <span class="pro-detail" style="font-size: 20px;">Sannitya Murikipudi</span></li>
+                  <li><span class="pro-title" style="font-size: 20px;"> Age </span> <span class="pro-detail" style="font-size: 20px;">20 Years</span></li>
+                  <li><span class="pro-title" style="font-size: 20px;"> Gender</span> <span class="pro-detail" style="font-size: 20px;">Female</span></li>
+                  <li><span class="pro-title" style="font-size: 20px;"> Country </span> <span class="pro-detail" style="font-size: 20px;">India</span></li>
+                  <li><span class="pro-title" style="font-size: 20px;"> Location </span> <span class="pro-detail" style="font-size: 20px;">Hyderabad, Telangana</span></li>
+                  <li><span class="pro-title" style="font-size: 20px;"> e-mail </span> <span class="pro-detail" style="font-size: 20px;">mssannitya@gmail.com</span></li>
+                  <li><span class="pro-title" style="font-size: 20px;"> Phone </span> <span class="pro-detail" style="font-size: 20px;">+(91) 8639070419 </span></li>
+                  <!--li><span class="pro-title"> Freelance </span> <span class="pro-detail">Available</span></li-->
+                </ul>
+                <p style="font-size: 18px;">I am a junior IT student from BVRIT-Hyderabad College of Engineering for Women.
+                  My teenage years were spent wondering about how did the ideas like online shopping, food delivery and taxi booking become reality.
+                   I was fascinated when I got a mail from amazon for each order, when swiggy showed the estimated delivery time for my food.
+                   All those application features which now I know are API integrations were a big deal for me back then. 
+                   Not just these, I also tried to fathom out how my phone took videos in slow motion, and now I am figuring out how Siri works and how netflix gives me just the right recommendations.
+                    From watching Tom & Jerry DVD's on television to watching series on Amazon Prime, I think our generation has witnessed a huge technological advancement and I am eagerly waiting to become a part of many such amazing things in technology that are yet to be discovered by us.
+                    I would find it wondrous if I was able to solve the tiniest of problems with my software development knowledge</p>
+              </div>
+              <a href="https://drive.google.com/file/d/1OVohbjYMqhCYnZ6m3GmGHZdPVKC9BBNl/view?usp=share_link" class="btn btn-common" download><i class="icon-paper-clip"></i> Download Resume</a>
+              <!--a href="#" class="btn btn-danger"><i class="icon-speech"></i> Contact Me</a-->
+            </div>
+          </div>   
+        </div>
+      </div>
+    </section>
+    <!-- About Section End -->
+ <section id="experience" class="services section-padding">
+      <h2 class="section-title wow flipInX" data-wow-delay="0.4s">Experience</h2>
+      <div class="container">
+        <div class="row">
+ 	<div class="col">
+		
+		<!--<div class="card" style="max-width:300px; margin-left: 50px;">
+  			<img class="card-img-top" src="./assets/maersk.jpg" alt="Card image cap">
+  			<div class="card-body">
+		
+				<a id="maerskBtn" style="color:black; text-decoration: underline">
+					<h5 class="card-title"><br/> Data Science Intern</h5>
+				</a>
+
+    			<p class="card-text"></p>
+  
+  			</div>
+		</div>
+		</div>
+	</div>
+
+	<div id="maerskModal" class="modal">
+
+
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 >Maersk</h3>
+              <span class="cls">&times;</span>
+
+            </div>
+            <div class="modal-body">
+              <div class="row">    -->
+                <!--div class="column" style="float: left;width: 50%;">
+			<div class="container">
+                  <img src="./assets/img/gallery/edunate.jpg"  style="width:100%;height:auto">
+                </div>
+		</div-->
+                <!--div class="column" style="float: left;width: 50%;"-->
+         <!--       <div class="container">
+                  <h5 style="font-size: 25px;font-weight: bolder;">PLATFORM CAPABILITY TEAM</h5>
+              <p style="font-size: 20px;font-weight: bold;font-family: 'Times New Roman', Times, serif;">Builds and maintains the features of "Maestro" - A digital analytics platform that maintains the company's datalake.</p>
+	      <br/><h5 style="font-size: 25px;font-weight: bold; font-family: 'Times New Roman', Times, serif;">Responsibilities:</h5>
+              <p style="font-size: 20px;font-weight: bold;font-family: 'Times New Roman', Times, serif;">
+	      WORKED ON:
+	      <ol style="font-size: 20px;font-weight: bold;font-family: 'Times New Roman', Times, serif;">
+
+		      <li> The POC of a DaaS platform called Dremio.</li>
+			      <li> Deployment of a Postgres instance on Kubernetes.</li>
+			      <li> Dashboarding in JupyterHub.</li>
+			      <li> Integration of unraveldata with JupyterHub.</li>
+			      <li> Setting up of Data Access API for ADLS Datasets.</li>
+	      </ol>
+	      </p>
+            </div>    -->
+            <!--/div-->
+              </div>
+              </div>
+
+          </div>
+
+        </div>
+     <!-- Services Section Start -->
+    <section id="community" class="services section-padding">
+      <h2 class="section-title wow flipInX" data-wow-delay="0.4s">Community Roles</h2>
+      <div class="container">
+        <div class="row">
+	<div class="col">
+	
+		<div class="container" style="height: 350px">
+		<div class="card" style="max-width: calc(25%-30px);max-height: 500px;">
+  			<img class="card-img-top" src="./assets/img/iuce.png" alt="Card image cap">
+  			<div class="card-body">
+				<h5 class="card-title">IUCEE Student Chapter (BVRIT HYDERABAD)</h5>
+    			<p class="card-text">Member</p>
+
+			</div>
+		</div>	
+		</div>
+	</div>
+	<div class="col">
+		<div class="container" style="height: 350px">
+
+		<div class="card" style="max-width: calc(25%-30px);max-height:500px;">
+  			<img class="card-img-top" src="./assets/img/dsc.png" alt="Card image cap">
+  			<div class="card-body">
+				<h5 class="card-title">Developer Student Club (BVRIT HYDERABAD)</h5>
+    			<p class="card-text">Member</p>
+
+			</div>
+		</div>
+		</div>	
+	</div>
+	<div class="col">
+		<div class="container" style="height: 350px">
+	
+		<div class="card" style="max-width: calc(25%-30px);max-height: 500px;">
+  			<img class="card-img-top" src="./assets/img/acm.png" alt="Card image cap">
+  			<div class="card-body">
+				<h5 class="card-title">ACM-W BVRIT HYDERABAD Chapter</h5>
+    			<p class="card-text">Chair</p>
+  
+  			</div>
+		
+		</div>
+		</div>
+	</div>
+	<div class="col">
+		<div class="container" style="height: 350px">
+		
+		<div class="card" style="max-width: calc(30%-35px);max-height: 500px;">
+  			<img class="card-img-top" src="./assets/img/logo.png" height="135px" alt="Card image cap">
+  			<div class="card-body">
+				<h5 class="card-title">Indian Society for Technical Education.</h5>
+    			<p class="card-text">Member</p>
+
+			</div>
+		
+		</div>
+		</div>	
+	</div>
+	</div>
+    </section>
+    <!-- Services Section End -->
+
+
+    <!-- Services Section Start -->
+    <section id="services" class="services section-padding">
+      <h2 class="section-title wow flipInX" data-wow-delay="0.4s">Knowledge Areas</h2>
+      <div class="container">
+        <div class="row">
+          <!-- Services item -->
+          <div class="col-md-6 col-lg-3 col-xs-12">
+            <div class="services-item wow fadeInDown" data-wow-delay="0.3s">
+              <div class="icon">
+                <i class="fa fa-desktop"></i>
+              </div>
+              <div class="services-content">
+                <h3><a>Web Development/Scripting</a></h3>
+                <p>I wrote tiny scripts and worked on JavaScript. I can work on web-dev projects by referring to the documentation</p>
+              </div>
+            </div>
+          </div>
+          <!-- Services item -->
+          <div class="col-md-6 col-lg-3 col-xs-12" >
+            <div class="services-item wow fadeInDown" data-wow-delay="0.6s">
+              <div class="icon">
+                <i class="fa fa-code"></i>
+              </div>
+              <div class="services-content">
+                <h3><a >Problem Solving in C++, Python</a></h3>
+                <p>I solve problems and participate in contests on coding platforms like Codechef & HackerRank. I learn from and practice on InterviewBits.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Services item -->
+          <div class="col-md-6 col-lg-3 col-xs-12">
+            <div class="services-item wow fadeInDown" data-wow-delay="0.9s">
+              <div class="icon">
+                <i class="icon-layers"></i>
+              </div>
+              <div class="services-content">
+                <h3><a >Web Development</a></h3>
+                <p>I am exploring web development. I am currently working on building my portfolio and other exciting projects.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Services item -->
+          <div class="col-md-6 col-lg-3 col-xs-12">
+            <div class="services-item wow fadeInDown" data-wow-delay="1.2s">
+              <div class="icon">
+                <i class="icon-graph"></i>
+              </div>
+              <div class="services-content">
+                <h3><a >Machine Learning</a></h3>
+		<p>I have completed some courses in ML and worked on some beginner and intermediate level projects in this domain.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Services Section End -->
+
+
+    <!-- Portfolio Section -->
+    <section id="portfolios" class="section-padding">
+      <!-- Container Starts -->
+      <div class="container">        
+        <h2 class="section-title wow flipInX" data-wow-delay="0.4s">My Works</h2>
+        <div class="row">          
+          <div class="col-md-12">
+            <!-- Portfolio Controller/Buttons -->
+            <div class="controls text-center">
+              <a class="filter active btn btn-common" data-filter="all">
+                All 
+              </a>
+              <a class="filter btn btn-common" data-filter=".design">
+               Art
+              </a>
+              <a class="filter btn btn-common" data-filter=".development">
+                Development
+              </a>
+              <!--a class="filter btn btn-common" data-filter=".print">
+                Print 
+              </a-->
+            </div>
+            <!-- Portfolio Controller/Buttons Ends-->
+          </div>
+
+          <!-- Portfolio Recent Projects -->
+          <div id="portfolio" class="row wow fadeInDown" data-wow-delay="0.4s">
+            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix development">
+              <div class="portfolio-item">
+                <div class="shot-item">
+                  <img src="./assets/e-learning.png" alt="" />  
+                  <div class="overlay">
+                    <div class="icons">
+			    <a class="link" href="https://github.com/Sannitya-13/FullStack_MajorProject">
+                        <i class="icon-link"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>               
+              </div>
+            </div>
+            
+            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix development">
+              <div class="portfolio-item">
+                <div class="shot-item">
+                  <img src="./assets/rental.png" alt="" />  
+                  <div class="overlay">
+                    <div class="icons">
+			    <a class="link" href="https://github.com/Sannitya-13/Public-Bicycle-Rental-System">
+                        <i class="icon-link"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>               
+              </div>
+            </div>
+	    
+	    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix development">
+              <div class="portfolio-item">
+                <div class="shot-item">
+                  <img src="./assets/futoshiki.png" alt="" />  
+                  <div class="overlay">
+                    <div class="icons">
+			    <a class="link" href="https://gitlab.com/20wh1a6651/futoshiki-team-17/-/tree/main">
+                        <i class="icon-link"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>               
+              </div>
+            </div>
+	    
+            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix development">
+              <div class="portfolio-item">
+                <div class="shot-item">
+                  <img src="./assets/img/gallery/chatbot.png" alt="" />  
+                  <div class="overlay">
+                    <div class="icons">
+                      <a id="myBtns">
+                        <i class="icon-eye"></i>
+                      </a>
+			    <a class="link" href="https://github.com/Sannitya-13/FullStack_minor">
+                        <i class="icon-link"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>               
+              </div>
+            </div>
+	    
+
+	  <div id="myModals" class="modal">
+
+          <!-- Modal content -->
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 >Les Hotels</h3>
+              <span class="clse">&times;</span>
+
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <!--div class="column" style="float: left;width: 50%;">
+			<div class="container">
+                  <img src="assets/img/gallery/collages/lcollage.jpg" style="width:100%;height:auto;">
+                </div>
+		</div-->
+                <!--div class="column" style="float: left;width: 50%;"-->
+                <div class="container">
+                  <h5 style="font-size: 25px;font-weight: bolder;">About the project:</h5>
+              <p style="font-size: 20px;font-weight: bold;font-family: 'Times New Roman', Times, serif;">A django-based web-application that replicates Oyo Rooms. I worked on the frontend (using HTML, CSS & BOOTSTRAP) and  django user authentication system. Also, I tried to connect the web application to a sqlite3 database for storing and retrieving hotel details.<p>
+              <br/><h5 style="font-size: 25px;font-weight: bolder;">My takeaways:</h5>
+              <p style="font-size: 20px;font-weight: bold;font-family: 'Times New Roman', Times, serif;">A team of 5 worked on this during the summer after freshman year and I was a novice leader. Though we couldn't finish the project completely, working in a new team was like a roller coaster ride. As it was our first project, none of us were sure about what we were good at and what we were not good at.This project taught me "self learning" - Most of the project was done by referring to documentation or online tutorials. It also taught me how to present my work through "LateX". It was my first time working on a web app in linux environment, so, the entire procedure of installations and environment setup was itself a great learning!<br/> </p>
+            </div>
+            <!--/div-->
+              </div>
+              </div>
+
+          </div>
+
+        </div>
+
+
+           <!-- <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix development">
+            <div class="portfolio-item">
+              <div class="shot-item">
+                <img src="assets/img/gallery/edunate.png" alt="" />  
+                <div class="overlay">
+                  <div class="icons">
+                    <a id="myBtn">
+                      <i class="icon-eye"></i>
+                    </a>
+			  <a class="link" href="https://github.com/pravallika-1305/EDUNATE">
+                      <i class="icon-link"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>               
+            </div>
+          </div>
+	  <div id="myModal" class="modal">    -->
+
+          <!-- Modal content -->
+       <!--   <div class="modal-content">
+            <div class="modal-header">
+              <h3 >Edunate</h3>
+              <span class="close">&times;</span>
+
+            </div>
+            <div class="modal-body"> 
+              <div class="row">    -->
+                <!--div class="column" style="float: left;width: 50%;">
+			<div class="container">
+                  <img src="./assets/img/gallery/edunate.jpg"  style="width:100%;height:auto">
+                </div>
+		</div-->
+                <!--div class="column" style="float: left;width: 50%;"-->
+         <!--      <div class="container">
+                  <h5 style="font-size: 25px;font-weight: bolder;">About the project:</h5>
+              <p style="font-size: 20px;font-weight: bold;font-family: 'Times New Roman', Times, serif;">A MEANSTACK web-application that connects passionate youth who can teach with schools that are in need of teachers.<br/> It provides an online call feature for virtual teaching sessions and a chatbot built on dialogue flow to help the user in navigating through the website. Apart from the video call feature, other parts that I contributed for include -  integration of SMS sending API (using textlocal), mail sending API (using nodemailer), news API, image upload & certificate download features. </p>
+              <br/><h5 style="font-size: 25px;font-weight: bolder;">My takeaways:</h5>
+              <p style="font-size: 20px;font-weight: bold;font-family: 'Times New Roman', Times, serif;">It was a group project. So not just my technical skills but my soft skills also improved after working on this project. As I was the team lead, I also learnt prioritizing tasks and dividing them among my team mates based on their strengths. Querying from a non-SQL database was comparatively easier but retrieving information from different collections through HTTP requests was a big deal.We worked on this project remotely hence we managed the entire project through git. Even the presentations were held virtually, it was a challenging journey!</p>
+            </div>    -->
+            <!--/div-->
+      <!--        </div>
+              </div>
+
+          </div>    -->
+
+       <!-- </div>
+          <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix development">
+          <div class="portfolio-item">
+            <div class="shot-item">
+              <img src="assets/img/gallery/russell.png" alt="" />  
+              <div class="overlay">
+                <div class="icons">
+                  <a class="link" href="https://portfolios.talentsprint.com/~russell/">
+                    <i class="icon-link"></i>
+                  </a>
+                </div>
+              </div>
+            </div>               
+          </div>
+        </div>   -->
+        
+        <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix design">
+          <div class="portfolio-item">
+            <div class="shot-item">
+              <img src="assets/img/gallery/img-8.jpg" alt="" />  
+              <div class="overlay">
+                <div class="icons">
+                  <a class="lightbox preview" href="assets/img/gallery/img-8.jpg">
+                    <i class="icon-eye"></i>
+                  </a>
+                  <!--a class="link" href="#">
+                    <i class="icon-link"></i>
+                  </a-->
+                </div>
+              </div>
+            </div>               
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix design">
+          <div class="portfolio-item">
+            <div class="shot-item">
+              <img src="assets/img/gallery/img-9.jpg" alt="" />  
+              <div class="overlay">
+                <div class="icons">
+                  <a class="lightbox preview" href="assets/img/gallery/img-9.jpg">
+                    <i class="icon-eye"></i>
+                  </a>
+                  <!--a class="link" href="#">
+                    <i class="icon-link"></i>
+                  </a-->
+                </div>
+              </div>
+            </div>               
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix design">
+          <div class="portfolio-item">
+            <div class="shot-item">
+              <img src="assets/img/gallery/img-6.jpg" alt="" />  
+              <div class="overlay">
+                <div class="icons">
+                  <a class="lightbox preview" href="assets/img/gallery/img-6.jpg">
+                    <i class="icon-eye"></i>
+                  </a>
+                  <!--a class="link" href="#">
+                    <i class="icon-link"></i>
+                  </a-->
+                </div>
+              </div>
+            </div>               
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix design">
+          <div class="portfolio-item">
+            <div class="shot-item">
+              <img src="assets/img/gallery/img-16.jpg" alt="" />  
+              <div class="overlay">
+                <div class="icons">
+                  <a class="lightbox preview" href="assets/img/gallery/img-16.jpg">
+                    <i class="icon-eye"></i>
+                  </a>
+                  <!--a class="link" href="#">
+                    <i class="icon-link"></i>
+                  </a-->
+                </div>
+              </div>
+            </div>               
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix design">
+          <div class="portfolio-item">
+            <div class="shot-item">
+              <img src="assets/img/gallery/img-7.jpg" alt="" />  
+              <div class="overlay">
+                <div class="icons">
+                  <a class="lightbox preview" href="assets/img/gallery/img-7.jpg">
+                    <i class="icon-eye"></i>
+                  </a>
+                  <!--a class="link" href="#">
+                    <i class="icon-link"></i>
+                  </a-->
+                </div>
+              </div>
+            </div>               
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix design">
+          <div class="portfolio-item">
+            <div class="shot-item">
+              <img src="assets/img/gallery/img-17.jpg" alt="" />  
+              <div class="overlay">
+                <div class="icons">
+                  <a class="lightbox preview" href="assets/img/gallery/img-17.jpg">
+                    <i class="icon-eye"></i>
+                  </a>
+                  <!--a class="link" href="#">
+                    <i class="icon-link"></i>
+                  </a-->
+                </div>
+              </div>
+            </div>               
+          </div>
+        </div>
+        
+        
+        
+        
+          
+            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix design">
+              <div class="portfolio-item">
+                <div class="shot-item">
+                  <img src="assets/img/gallery/img-15.jpg" alt="" />  
+                  <div class="overlay">
+                    <div class="icons">
+                      <a class="lightbox preview" href="assets/img/gallery/img-15.jpg">
+                        <i class="icon-eye"></i>
+                      </a>
+                      <!--a class="link" href="#">
+                        <i class="icon-link"></i>
+                      </a-->
+                    </div>
+                  </div>
+                </div>               
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix design ">
+              <div class="portfolio-item">
+                <div class="shot-item">
+                  <img src="assets/img/gallery/img-5.jpg" alt=""/> 
+                  <div class="overlay">
+                    <div class="icons">
+                      <a class="lightbox preview" href="assets/img/gallery/img-5.jpg">
+                        <i class="icon-eye"></i>
+                      </a>
+                      <!--a class="link" href="#">
+                        <i class="icon-link"></i>
+                      </a-->
+                    </div>
+                  </div>
+                </div>               
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix design">
+              <div class="portfolio-item">
+                <div class="shot-item">
+                  <img src="assets/img/gallery/img-3.jpg" alt=""/> 
+                  <div class="overlay">
+                    <div class="icons">
+                      <a class="lightbox preview" href="assets/img/gallery/img-3.jpg">
+                        <i class="icon-eye"></i>
+                      </a>
+                      <!--a class="link" href="#">
+                        <i class="icon-link"></i>
+                      </a-->
+                    </div>
+                  </div>
+                </div>               
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix design">
+              <div class="portfolio-item">
+                <div class="shot-item">
+                  <img src="assets/img/gallery/img-4.jpg" alt="" /> 
+                  <div class="overlay">
+                    <div class="icons">
+                      <a class="lightbox preview" href="assets/img/gallery/img-4.jpg">
+                        <i class="icon-eye"></i>
+                      </a>
+                      <!--a class="link" href="#">
+                        <i class="icon-link"></i>
+                      </a-->
+                    </div>
+                  </div>
+                </div>               
+              </div>
+            </div>
+       <!--     <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix design">
+              <div class="portfolio-item">
+                <div class="shot-item">
+                  <img src="assets/img/gallery/img-2.jpg" alt="" /> 
+                  <div class="overlay">
+                    <div class="icons">
+                      <a class="lightbox preview" href="assets/img/gallery/img-2.jpg">
+                        <i class="icon-eye"></i>
+                      </a>             -->
+                      <!--a class="link" href="#">
+                        <i class="icon-link"></i>
+                      </a-->
+        <!--            </div>
+                  </div>
+                </div>               
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix design">
+              <div class="portfolio-item">
+                <div class="shot-item">
+                  <img src="assets/img/gallery/img-14.jpg" alt=""/>
+                  <div class="overlay">
+                    <div class="icons">
+                      <a class="lightbox preview" href="assets/img/gallery/img-14.jpg">
+                        <i class="icon-eye"></i>
+                      </a>     -->
+                      <!--a class="link" href="#">
+                        <i class="icon-link"></i>
+                      </a-->
+         <!--         </div>
+                  </div>
+                </div>               
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>  -->
+      <!-- Container Ends -->
+    </section>
+    <!-- Portfolio Section Ends --> 
+
+   
+ 
+ 
+
+    <!-- Go to Top Link -->
+    <a href="#" class="back-to-top">
+      <i class="icon-arrow-up"></i>
+    </a>
+<script>
+      // Get the modal
+      var modal = document.getElementById("myModal");
+      var modals = document.getElementById("myModals");
+      var maersk = document.getElementById("maerskModal");
+      // Get the button that opens the modal
+      var btn = document.getElementById("myBtn");
+      var bt = document.getElementById("myBtns");
+      var maersk_btn = document.getElementById("maerskBtn");
+      
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+      var spann = document.getElementsByClassName("cls")[0];
+      var spn = document.getElementsByClassName("clse")[0];
+      
+      // When the user clicks the button, open the modal 
+      btn.onclick = function() {
+        modal.style.display = "block";
+      }
+      bt.onclick = function() {
+        modals.style.display = "block";
+      }
+      maersk_btn.onclick = function() {
+        maersk.style.display = "inline";
+      }
+      
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function() {
+        modal.style.display = "none";
+      }
+      spn.onclick = function() {
+
+        modals.style.display = "none";
+      }
+      spann.onclick = function() {
+		  maersk.style.display = "none";
+      }
+      
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
+      
+      </script>
+    
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="assets/js/jquery-min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/jsg/jquery.mixitup.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/wow.js"></script>
+    <script src="assets/js/jquery.nav.js"></script>
+    <script src="assets/js/jquery.easing.min.js"></script>  
+    <script src="assets/js/nivo-lightbox.js"></script>
+    <script src="assets/js/jquery.slicknav.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/form-validator.min.js"></script>
+    <script src="assets/js/contact-form-script.min.js"></script>
+    <script src="assets/js/map.js"></script>
+      
+  </body>
+</html>
