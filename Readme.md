@@ -5,6 +5,7 @@
 ## 📁 Project Directory
 
 Here's a quick overview of the projects you'll find in this repository:
+[https://drive.google.com/file/d/1VpeUt7GCTU2vkzbctor7XMcmx8BT0mF0/view?usp=sharing]
 
 1. **Public Bicycle Rental System with Regression Comparison**: This project compares different regression algorithms for predicting demand in a public bicycle rental system. Using Python, the project implements and evaluates various regression algorithms and identifies the LGBM Regressor as the best performer. The system is deployed with a user-friendly interface using Tkinter and Gradio.[https://github.com/Sannitya-13/Public-Bicycle-Rental-System]
 2. **E-Learning Platform using HTML, CSS, JS, and Node.js**:  In this project, I developed an e-learning platform using a combination of HTML, CSS, JavaScript, and Node.js. The platform provides a user-friendly interface for accessing and participating in online courses. It includes features such as course enrollment, progress tracking, multimedia content delivery, and discussion forums.[https://github.com/Sannitya-13/FullStack_MajorProject]
